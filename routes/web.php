@@ -21,4 +21,3 @@ Route::get('/books/{book}', [BookWebController::class, 'show']);
 Route::put('/books/{book}', [BookWebController::class, 'update']);
 Route::delete('/books/{book}', [BookWebController::class, 'destroy']);
 Route::get('/books/edit/{book}', [ 'as' => 'books.edit', 'uses' => 'BookWebController@edit']);
-//Route::get('/books/show/{book}', [ 'as' => 'books.show', 'uses' => 'BookWebController@show']);
