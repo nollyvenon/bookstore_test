@@ -1,0 +1,26 @@
+laravel new bookstore
+cd bookstore
+ composer require laravel/passport
+php artisan db:wipe
+php artisan migrate
+php artisan passport:install
+php artisan tinker
+ DB::table('users')->insert(['name'=>'john azuka','email'=>'johnazuka@gmail.com','password'=>Hash::make('johnazuka')]
+);
+
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 1
+Client secret: urpha0JxDhi8YqK8XKC1FMGqYqHeInXyNy1rDNx7
+Password grant client created successfully.
+Client ID: 2
+Client secret: ZhPjQNOi85CZGh51hawnMpffq9rtGGqFLOmLOi3E
+=====================================
+php artisan make:model -a -r Author
+php artisan migrate --seed
+php artisan make:resource AuthorResource
+=========================================================================	
+php artisan make:migration create_book_author_table
+
+
+Uzhhorod
