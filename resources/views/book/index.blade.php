@@ -2,7 +2,7 @@
 
 @section('content')
  <h1>Test Library</h1>
- <!--<a href="{{url('/book/create')}}" class="btn btn-success">Create Book</a>-->
+ 
  <hr>
  <table class="table table-striped table-bordered table-hover">
      <thead>
