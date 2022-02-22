@@ -6,16 +6,16 @@ I created a user with:
 php artisan tinker
  DB::table('users')->insert(['name'=>'john azuka','email'=>username,'password'=>Hash::make('your password')]
 );
-and receive the Client ID and secret, this is then used as encryption keys
+and receive the Client ID and secret, this is then used as encryption keys<br>
 
-An oauth token is generated using this URL http://127.0.0.1:8000/oauth/token
-Parameters in the Body are:
-Accept: application/json 
-grant_type: password
-client_id: generated_client_id
-client_secret: generated_client_secret
-username: your_email
-password: your_password
+An oauth token is generated using this URL http://127.0.0.1:8000/oauth/token<br>
+Parameters in the Body are:<br>
+Accept: application/json <br>
+grant_type: password<br>
+client_id: generated_client_id<br>
+client_secret: generated_client_secret<br>
+username: your_email<br>
+password: your_password<br>
 
 The API are consumed using The Bearer token(Authorization) and Accept as application/json 
 This provides the client secret and ID for authenticated while testing the API
